@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application 2</string>
+    <string name="camera">CAMERA</string>
+    <string name="favorites">Favorites</string>
+    <string name="Categories">Categories</string>
+    <string name="tops">Tops</string>
+    <string name="bottoms">Bottoms</string>
+    <string name="item_1_top">Item 1 Top</string>
+    <string name="top1_description">Description</string>
+    <string name="name">Name</string>
+    <string name="denim">denim</string>
+    <string name="denims">Denims</string>
+    <string name="description">Description</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="favorites1">Favorites</string>
+</resources>

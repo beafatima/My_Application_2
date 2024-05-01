@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDescription"
+    android:orientation="vertical"
+    android:background="@color/brown">
+
+    <!--Back arrow-->
+    <ImageView
+        android:id="@+id/back_arrow_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/todo1" />
+
+    <!--Image-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <ImageView
+            android:id="@+id/tops"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/search_bar"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/tops"/>
+
+    </RelativeLayout>
+
+    <!--Name of the item-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/item_1_top"
+        android:textColor="@color/dark_brown"
+        android:textSize="26sp" />
+
+    <!--Description-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/description"
+        android:textColor="@color/dark_brown"
+        android:textSize="26sp" />
+
+</LinearLayout>

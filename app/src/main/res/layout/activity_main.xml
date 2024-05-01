@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/brown">
+    
+    <!--Search bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_bar"/>
+        
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search_bar"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/heart_border"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart_no_color"
+            android:layout_marginStart="10dp"/>
+        
+    </LinearLayout>
+    
+    <!--Bottom Nav Bar-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/btm_nav"
+        app:itemIconSize="40dp"
+        android:background="@drawable/search_bar"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
